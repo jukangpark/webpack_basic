@@ -1,0 +1,1 @@
+{"version":3,"file":"style.css","mappings":"AAAA;EACE,uBAAuB;EACvB,YAAY;AACd;;ACHA;EACE,uBAAuB;EACvB,YAAY;AACd","sources":["webpack://webpack_basic/./src/reset.css","webpack://webpack_basic/./src/test.css"],"sourcesContent":["* {\n  background-color: black;\n  color: white;\n}\n","body {\n  background-color: black;\n  color: white;\n}\n"],"names":[],"sourceRoot":""}
