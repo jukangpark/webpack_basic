@@ -1,8 +1,9 @@
-import "./reset.css";
-import "./test.css";
+// import "./reset.css";
+import Router from "./Router";
+// import "./test.css";
 
 const App = () => {
-  return <div>SPA</div>;
+  return <Router />;
 };
 
 export default App;

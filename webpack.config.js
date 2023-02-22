@@ -50,7 +50,7 @@ module.exports = (env, argv) => {
     devtool: prod ? "hidden-source-map" : "eval-cheap-module-source-map",
     entry: "./src/index.js",
     output: {
-      //   publicPath: "/",
+      publicPath: "/", // 이거 안하면 router 처리 불가능
       // react-router 에서 경로 참조
       // 새로고침해도, publicPath 를 참조하게됨.
       path: path.join(__dirname, "/dist"),
@@ -71,11 +71,11 @@ module.exports = (env, argv) => {
       historyApiFallback: true,
       // HTML5 History API 를 사용하여, index.html 페이지는
       // 404 응답 대신 제공되어야 함. true 로 설정하여 활성화 할 수 있다.
-      proxy: {
-        "/user/*": {
-          target: "http://localhost:9000",
-        },
-      },
+      // proxy: {
+      //   "/user/*": {
+      //     target: "http://localhost:9000",
+      //   },
+      // },
       static: { directory: path.join(__dirname, "public") },
     },
     resolve: {
